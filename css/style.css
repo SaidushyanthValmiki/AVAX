@@ -1,0 +1,116 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+ #particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -30000;
+    background:black;
+  }
+
+#heading .head{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#section_1{
+    position: relative;
+}
+#heading img{
+    height: 100%;
+    position: absolute;
+    right:0%;
+    top: 5%;
+    z-index: -1000;
+}
+@media (max-width: 767px) {
+    #heading {
+        text-align: center;
+    }
+
+    #heading h1 {
+        font-size: 2.5rem;
+    }
+
+    #heading p {
+        font-size: 1rem;
+    }
+
+    #heading img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #heading h1 {
+        font-size: 3rem;
+    }
+
+    #heading p {
+        font-size: 1.2rem;
+    }
+}
+#navBar{
+    backdrop-filter: blur(15px) !important;
+}
+#section_2 {
+    position: relative;
+    overflow: hidden;
+}
+#section_2 img{
+    position: absolute;
+    left:5%;
+    top:10%;
+    z-index: -1000;
+}
+/* #section_2 .background-gradient .gradient-colour{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 80vw;
+    z-index: -25000 ;
+    background: linear-gradient(rgba(255, 0, 0, 0.387), rgba(255, 192, 203, 0.507), rgba(255, 255, 255, 0.547));
+} */
+.background_gradient {
+    width: 30rem;
+    height: 30rem;
+    transform-style: preserve-3d;
+    background-image: radial-gradient(circle closest-side, rgba(179, 40, 88, .3), rgba(179, 40, 88, 0));
+    overflow: hidden;
+    transform: rotate(12deg) scale3d(3, 1.5, 1);
+}
+
+.background_gradient-parent {
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 767px) {
+    .background_gradient {
+        width: 20rem;
+        height: 20rem;
+        transform: rotate(12deg) scale3d(2, 1, 1);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .background_gradient {
+        width: 25rem;
+        height: 25rem;
+        transform: rotate(12deg) scale3d(2.5, 1.25, 1);
+    }
+}
